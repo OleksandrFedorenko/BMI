@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3X9-U1-oAv">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
@@ -130,6 +129,7 @@
                         <outlet property="weightSlider" destination="nz5-7M-o0o" id="1fz-wY-QXg"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1197" y="-350"/>
         </scene>
@@ -145,7 +145,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz7-eQ-Vmo">
-                                <rect key="frame" x="113.66666666666669" y="844" width="201" height="48"/>
+                                <rect key="frame" x="15" y="844" width="398" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -182,9 +182,11 @@
                         <constraints>
                             <constraint firstItem="nz7-eQ-Vmo" firstAttribute="centerX" secondItem="IXA-dG-9rn" secondAttribute="centerX" id="5Hk-1r-kCd"/>
                             <constraint firstItem="0cJ-Lz-lQJ" firstAttribute="top" secondItem="IXA-dG-9rn" secondAttribute="top" id="EDt-YD-ROs"/>
+                            <constraint firstItem="pea-GM-ITH" firstAttribute="trailing" secondItem="nz7-eQ-Vmo" secondAttribute="trailing" constant="15" id="b5S-fI-GAp"/>
                             <constraint firstItem="l4c-TM-DHd" firstAttribute="centerY" secondItem="IXA-dG-9rn" secondAttribute="centerY" id="iy6-Jg-xXB"/>
                             <constraint firstAttribute="trailing" secondItem="0cJ-Lz-lQJ" secondAttribute="trailing" id="kGJ-us-ufy"/>
                             <constraint firstAttribute="bottom" secondItem="0cJ-Lz-lQJ" secondAttribute="bottom" id="lO4-he-X2J"/>
+                            <constraint firstItem="nz7-eQ-Vmo" firstAttribute="leading" secondItem="pea-GM-ITH" secondAttribute="leading" constant="15" id="leJ-Bq-Yac"/>
                             <constraint firstItem="pea-GM-ITH" firstAttribute="bottom" secondItem="nz7-eQ-Vmo" secondAttribute="bottom" id="qrA-kp-A78"/>
                             <constraint firstItem="0cJ-Lz-lQJ" firstAttribute="leading" secondItem="IXA-dG-9rn" secondAttribute="leading" id="sqY-Pd-YVo"/>
                             <constraint firstItem="l4c-TM-DHd" firstAttribute="centerX" secondItem="IXA-dG-9rn" secondAttribute="centerX" id="yPK-9V-o4b"/>
@@ -193,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y9M-ha-ACl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-169.62616822429905" y="-286.3930885529158"/>
+            <point key="canvasLocation" x="-241" y="-351"/>
         </scene>
     </scenes>
     <resources>
