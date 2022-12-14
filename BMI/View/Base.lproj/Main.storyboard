@@ -127,6 +127,7 @@
                         <outlet property="heightSlider" destination="z9U-42-EmW" id="UPv-qz-pZW"/>
                         <outlet property="weight" destination="gUk-cR-Af6" id="V3Q-iB-Val"/>
                         <outlet property="weightSlider" destination="nz5-7M-o0o" id="1fz-wY-QXg"/>
+                        <segue destination="IPD-t1-nVf" kind="presentation" identifier="goToResult" id="DWO-QD-JDK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -138,14 +139,14 @@
             <objects>
                 <viewController id="IPD-t1-nVf" customClass="ResultViewController" customModule="BMI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IXA-dG-9rn">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="869"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="0cJ-Lz-lQJ">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="869"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz7-eQ-Vmo">
-                                <rect key="frame" x="15" y="844" width="398" height="48"/>
+                                <rect key="frame" x="15" y="821" width="398" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -157,7 +158,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-TM-DHd">
-                                <rect key="frame" x="98" y="374.33333333333331" width="232" height="177.66666666666669"/>
+                                <rect key="frame" x="98" y="345.66666666666669" width="232" height="177.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR RESULT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qp-MT-zhf">
                                         <rect key="frame" x="0.0" y="0.0" width="232" height="42"/>
@@ -172,7 +173,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EAT SOME MORE SNACKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qS2-4d-DNs">
-                                        <rect key="frame" x="0.6666666666666714" y="153.66666666666669" width="230.66666666666663" height="24"/>
+                                        <rect key="frame" x="0.6666666666666714" y="153.66666666666663" width="230.66666666666663" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>

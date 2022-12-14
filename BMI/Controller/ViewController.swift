@@ -45,6 +45,9 @@ class ViewController: UIViewController {
        let bmi = weightSlider.value / (heightSlider.value * heightSlider.value)
         bmiValue = String(format: "%.2f", bmi)
         print("bmi - \(bmiValue)")
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+        
     }
     
 }
