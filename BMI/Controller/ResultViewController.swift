@@ -9,8 +9,9 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+ 
+    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
-    @IBOutlet weak var bmiLabel: UILabel!
 
     let bmi = ""
     
@@ -21,7 +22,8 @@ class ResultViewController: UIViewController {
     
   
     
-    @IBAction func recalculateButtonPressed(_ sender: UIButton) {
+    
+    @IBAction func recalculateButton(_ sender: UIButton) {
     }
     /*
     // MARK: - Navigation

@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="-1197" y="-350"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="LRg-CP-cfb">
             <objects>
-                <viewController id="IPD-t1-nVf" sceneMemberID="viewController">
+                <viewController id="IPD-t1-nVf" customClass="ResultViewController" customModule="BMI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IXA-dG-9rn">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +152,9 @@
                                 <state key="normal" title="RECALCULATE">
                                     <color key="titleColor" red="0.63476282360000003" green="0.63242864610000005" blue="0.87035828829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="recalculateButton:" destination="IPD-t1-nVf" eventType="touchUpInside" id="ctW-Me-XWh"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-TM-DHd">
                                 <rect key="frame" x="98" y="374.33333333333331" width="232" height="177.66666666666669"/>
@@ -192,6 +195,10 @@
                             <constraint firstItem="l4c-TM-DHd" firstAttribute="centerX" secondItem="IXA-dG-9rn" secondAttribute="centerX" id="yPK-9V-o4b"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="qS2-4d-DNs" id="OAE-FL-oxJ"/>
+                        <outlet property="resultLabel" destination="3da-nR-KhI" id="tEl-DX-97H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y9M-ha-ACl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
