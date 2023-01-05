@@ -50,10 +50,10 @@ class ViewController: UIViewController {
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let secondVC = segue.destination as? ResultViewController else {return}
-        secondVC.bmiResult = bmiValue
-        
-        
+        if segue.identifier == "goToResult"{                                   // if we have several let say windows we want to make sure that we go to selected one
+           let destination = segue.destination as! ResultViewController 
+            destination.bmiResult = bmiValue
+        }
     }
     
 }
