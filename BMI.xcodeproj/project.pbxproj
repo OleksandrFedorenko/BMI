@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40023C2B2966F40E003CC9A9 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40023C2A2966F40E003CC9A9 /* CalculatorBrain.swift */; };
+		40023C2D29670FF5003CC9A9 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40023C2C29670FF5003CC9A9 /* BMI.swift */; };
 		40A1A185293CA064005513F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1A184293CA064005513F0 /* AppDelegate.swift */; };
 		40A1A187293CA064005513F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1A186293CA064005513F0 /* SceneDelegate.swift */; };
 		40A1A189293CA064005513F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1A188293CA064005513F0 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		40023C2A2966F40E003CC9A9 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		40023C2C29670FF5003CC9A9 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		40A1A181293CA064005513F0 /* BMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A1A184293CA064005513F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A1A186293CA064005513F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				40023C2A2966F40E003CC9A9 /* CalculatorBrain.swift */,
+				40023C2C29670FF5003CC9A9 /* BMI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				40A1A185293CA064005513F0 /* AppDelegate.swift in Sources */,
 				40A1A187293CA064005513F0 /* SceneDelegate.swift in Sources */,
 				40A1A19E293DF859005513F0 /* ResultViewController.swift in Sources */,
+				40023C2D29670FF5003CC9A9 /* BMI.swift in Sources */,
 				40023C2B2966F40E003CC9A9 /* CalculatorBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

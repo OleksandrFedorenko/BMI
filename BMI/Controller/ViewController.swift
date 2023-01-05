@@ -39,15 +39,17 @@ class ViewController: UIViewController {
     
 
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
-
+        
         CalculatorBrain.calculateBMI(height: heightSlider.value, weight: weightSlider.value)
         self.performSegue(withIdentifier: "goToResult", sender: self)
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult"{                                   // if we have several let say windows we want to make sure that we go to selected one
-           let destination = segue.destination as! ResultViewController 
-            destination.bmiResult = CalculatorBrain.getBMIValue()
+           let destinationVC = segue.destination as! ResultViewController
+            destinationVC.bmiResult = CalculatorBrain.getBMIValue()
+            destinationVC.advice = CalculatorBrain.getAdvice()
+            destinationVC.color = CalculatorBrain.getColor()
         }
     }
     
