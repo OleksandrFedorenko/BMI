@@ -11,7 +11,6 @@ import Foundation
 class ViewController: UIViewController {
 
     
-    var bmiValue = ""
     
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightSlider: UISlider!
@@ -25,7 +24,7 @@ class ViewController: UIViewController {
 
 
     
-    
+    var CalculatorBrain = CalculateBraine()
     
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
@@ -40,19 +39,15 @@ class ViewController: UIViewController {
     
 
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
-        print(heightSlider.value)
-        print(weightSlider.value)
-       let bmi = weightSlider.value / (heightSlider.value * heightSlider.value)
-        bmiValue = String(format: "%.2f", bmi)
-        print("bmi - \(bmiValue)")
-        
+
+        CalculatorBrain.calculateBMI(height: heightSlider.value, weight: weightSlider.value)
         self.performSegue(withIdentifier: "goToResult", sender: self)
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult"{                                   // if we have several let say windows we want to make sure that we go to selected one
            let destination = segue.destination as! ResultViewController 
-            destination.bmiResult = bmiValue
+            destination.bmiResult = CalculatorBrain.bmiValue
         }
     }
     
