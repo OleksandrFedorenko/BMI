@@ -13,10 +13,11 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
 
-    let bmi = ""
+    var bmiResult: String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultLabel.text = bmiResult
         
     }
     

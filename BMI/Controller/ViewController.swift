@@ -49,6 +49,12 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "goToResult", sender: self)
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let secondVC = segue.destination as? ResultViewController else {return}
+        secondVC.bmiResult = bmiValue
+        
+        
+    }
     
 }
 

@@ -48,7 +48,7 @@
                                             <constraint firstAttribute="height" constant="25" id="S0q-BP-Xub"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z9U-42-EmW">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="z9U-42-EmW">
                                         <rect key="frame" x="-2" y="669" width="402" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="YMs-ex-reG"/>
