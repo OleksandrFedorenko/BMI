@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult"{                                   // if we have several let say windows we want to make sure that we go to selected one
            let destination = segue.destination as! ResultViewController 
-            destination.bmiResult = CalculatorBrain.bmiValue
+            destination.bmiResult = CalculatorBrain.getBMIValue()
         }
     }
     
