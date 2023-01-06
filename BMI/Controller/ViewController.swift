@@ -19,7 +19,6 @@ class ViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
@@ -42,8 +41,8 @@ class ViewController: UIViewController {
         
         CalculatorBrain.calculateBMI(height: heightSlider.value, weight: weightSlider.value)
         self.performSegue(withIdentifier: "goToResult", sender: self)
-        
     }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult"{                                   // if we have several let say windows we want to make sure that we go to selected one
            let destinationVC = segue.destination as! ResultViewController

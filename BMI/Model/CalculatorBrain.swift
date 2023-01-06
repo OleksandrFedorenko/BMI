@@ -7,11 +7,10 @@
 
 import Foundation
 import UIKit
-
 class CalculateBraine{
-    
+
     var bmiValue: BMI?
-    
+
     func calculateBMI(height: Float, weight: Float) {
         print("\(height) - \(weight)")
         let bmi = weight / (height * height)
@@ -31,12 +30,10 @@ class CalculateBraine{
     }
     
     func getAdvice() -> String {
-        print("advice - \(bmiValue?.advice)")
         return bmiValue?.advice ?? "got nil in getAdvice"
     }
     
     func getColor() -> UIColor {
-        print("color - \(bmiValue?.color)")
         if let safeColor = bmiValue?.color{
             return safeColor
         }else{
@@ -44,5 +41,4 @@ class CalculateBraine{
         }
     }
 }
-
 
