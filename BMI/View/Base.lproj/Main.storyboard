@@ -145,18 +145,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="0cJ-Lz-lQJ">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="869"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz7-eQ-Vmo">
-                                <rect key="frame" x="15" y="821" width="398" height="48"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="RECALCULATE">
-                                    <color key="titleColor" red="0.63476282360000003" green="0.63242864610000005" blue="0.87035828829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="recalculateButton:" destination="IPD-t1-nVf" eventType="touchUpInside" id="ctW-Me-XWh"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-TM-DHd">
                                 <rect key="frame" x="98" y="345.66666666666669" width="232" height="177.66666666666669"/>
                                 <subviews>
@@ -180,18 +168,32 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz7-eQ-Vmo">
+                                <rect key="frame" x="15" y="796" width="398" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="7kN-Fz-2RG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="RECALCULATE">
+                                    <color key="titleColor" red="0.63476282360000003" green="0.63242864610000005" blue="0.87035828829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recalculateButton:" destination="IPD-t1-nVf" eventType="touchUpInside" id="ctW-Me-XWh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pea-GM-ITH"/>
                         <color key="backgroundColor" red="0.31372550129999999" green="0.5176470876" blue="0.82745099070000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="nz7-eQ-Vmo" firstAttribute="centerX" secondItem="IXA-dG-9rn" secondAttribute="centerX" id="5Hk-1r-kCd"/>
+                            <constraint firstItem="pea-GM-ITH" firstAttribute="trailing" secondItem="nz7-eQ-Vmo" secondAttribute="trailing" constant="15" id="2nO-Ne-DrU"/>
                             <constraint firstItem="0cJ-Lz-lQJ" firstAttribute="top" secondItem="IXA-dG-9rn" secondAttribute="top" id="EDt-YD-ROs"/>
-                            <constraint firstItem="pea-GM-ITH" firstAttribute="trailing" secondItem="nz7-eQ-Vmo" secondAttribute="trailing" constant="15" id="b5S-fI-GAp"/>
                             <constraint firstItem="l4c-TM-DHd" firstAttribute="centerY" secondItem="IXA-dG-9rn" secondAttribute="centerY" id="iy6-Jg-xXB"/>
                             <constraint firstAttribute="trailing" secondItem="0cJ-Lz-lQJ" secondAttribute="trailing" id="kGJ-us-ufy"/>
                             <constraint firstAttribute="bottom" secondItem="0cJ-Lz-lQJ" secondAttribute="bottom" id="lO4-he-X2J"/>
-                            <constraint firstItem="nz7-eQ-Vmo" firstAttribute="leading" secondItem="pea-GM-ITH" secondAttribute="leading" constant="15" id="leJ-Bq-Yac"/>
-                            <constraint firstItem="pea-GM-ITH" firstAttribute="bottom" secondItem="nz7-eQ-Vmo" secondAttribute="bottom" id="qrA-kp-A78"/>
+                            <constraint firstItem="nz7-eQ-Vmo" firstAttribute="leading" secondItem="pea-GM-ITH" secondAttribute="leading" constant="15" id="pgk-HE-iCy"/>
+                            <constraint firstItem="pea-GM-ITH" firstAttribute="bottom" secondItem="nz7-eQ-Vmo" secondAttribute="bottom" constant="22" id="qbs-2T-sxt"/>
                             <constraint firstItem="0cJ-Lz-lQJ" firstAttribute="leading" secondItem="IXA-dG-9rn" secondAttribute="leading" id="sqY-Pd-YVo"/>
                             <constraint firstItem="l4c-TM-DHd" firstAttribute="centerX" secondItem="IXA-dG-9rn" secondAttribute="centerX" id="yPK-9V-o4b"/>
                         </constraints>
